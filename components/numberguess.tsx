@@ -1,17 +1,10 @@
 "use client" // enables client side rendering for this component
 
-import { useState, useEffect, ChangeEvent, use } from "react";
+import { useState, useEffect, ChangeEvent, } from "react";
 import { Button } from "./ui/button";
 import { Input } from "./ui/input";
 
-interface NumberGuessingState{
-    gameStarted : boolean;
-    gameover:boolean;
-    paused:boolean;
-    targetNumber:boolean;
-    userGuess:number|number;
-    attempts:number;
-}
+
 //number guessing function
 export default function NumberGuessing():JSX.Element{
 const [gameStarted, setGameStarted]=useState<boolean>(false);
